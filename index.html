@@ -9,18 +9,70 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      /* .nec-logo{
+        background: url(images/logo_2.svg);
+        display: inline-block;
+        width: 100%;
+      } */
+      .nec-logo {
+        background: url(images/logo_2.svg) no-repeat 50%;
+    background-size: cover;
+    width: 80px;
+    background-position: 10px;
+    height: 80px;
+}
+  .guvi-logo{
+    background: url(images/guvi-logo.png) no-repeat 50%;
+    background-size: contain;
+    width: 150px;
+    background-position: 10px;
+    height: 50px;
+  }
+  @media (min-width: 480px){
+    .header-background{
+      background: linear-gradient( to bottom, #017BFF,white,white, white, white, white, white, white, white, #017BFF);
+      border: 1px solid #017BFF;
+    }
+  }
+
+  @media (max-width: 479px) {
+    header{
+      border: 1px solid #017BFF;
+    }
+  }
+  
+    </style>
   </head>
   <body>
-      <header>
-          <div class="container-fluid bg-primary text-white text-center py-3">
-            <h1 class="display-4">PyWeek</h1>
-            <p>quarantine made productive</p>    
+      <header class="rounded">
+          <div class="container-fluid border-sm border-primary py-3 px-0">
+            <div class="header-background container d-flex justify-content-between rounded p-0">
+              <div class="my-md-auto pr-2">
+                <a class="nec-logo d-inline-block" href="https://www.nec.edu.in" title="National Engineering College">
+                </a>
+              </div>
+  
+              <div class="text-primary text-center">
+                <h1 class="display-5">PyWeek</h1>
+                <p>A PyGame developer contest</p>  
+              </div>
+              
+              <div class="my-md-auto pl-2 pr-1">
+                <a class="guvi-logo d-none d-md-inline-block my-auto" href="https://www.guvi.io" title="Guvi Geek Networks"></a>
+                <a class="d-inline-block d-md-none" href="https://www.guvi.io" title="Guvi Geek Networks">
+                  <img src="images/favicon.ico" title="Guvi Geek Networks" alt="GUVI Geek Networks" width="65px">
+                </a>
+                
+              </div>
+            </div>
+            
           </div>
       </header>
       <main>
-        <div class="container p-0 my-2">
+        <div class="container p-0 mb-4 my-2">
             <div class="container bg-light p-3">
-                <p class="lead font-weight-bold">A Pygame Developer Contest</p>
+                <p class="lead font-weight-bold">Quarantine made productive</p>
                 <div class="container"> 
                     <p>As our young aspiring great school minds are locked in quarantine, <span class="font-weight-bold"> <a class="text-primary" href="https://www.nec.edu.in" target="_blank">National Engineering College</a></span> in association with <span class="font-weight-bold"> <a class="text-success" href="https://www.guvi.io" target="_blank">GUVI</a></span> is conducting a online contest about game development in python and win scholarship to enter our college.</p>
                 </div>
@@ -192,8 +244,8 @@
             </div>
           </div>
 
-          <div class="container text-center m-3">
-            <a href="https://www.bit.ly/pyweekReg" target="_blank" class="btn btn-primary">Register</a>
+          <div class="container text-center">
+            <a href="https://www.bit.ly/pyweekReg" target="_blank" class="btn btn-primary m-3">Register</a>
           </div>
 
           <div class="container bg-light p-3">
