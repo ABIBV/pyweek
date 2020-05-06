@@ -7,42 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      /* .nec-logo{
-        background: url(images/logo_2.svg);
-        display: inline-block;
-        width: 100%;
-      } */
-      .nec-logo {
-        background: url(images/logo_2.svg) no-repeat 50%;
-    background-size: cover;
-    width: 80px;
-    background-position: 10px;
-    height: 80px;
-}
-  .guvi-logo{
-    background: url(images/guvi-logo.png) no-repeat 50%;
-    background-size: contain;
-    width: 150px;
-    background-position: 10px;
-    height: 50px;
-  }
-  @media (min-width: 480px){
-    .header-background{
-      background: linear-gradient( to bottom, #017BFF,white,white, white, white, white, white, white, white, #017BFF);
-      border: 1px solid #017BFF;
-    }
-  }
-
-  @media (max-width: 479px) {
-    header{
-      border: 1px solid #017BFF;
-    }
-  }
-  
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
       <header class="rounded">
@@ -54,8 +25,8 @@
               </div>
   
               <div class="text-primary text-center">
-                <h1 class="display-5">PyWeek</h1>
-                <p>A PyGame developer contest</p>  
+                <h1 class="display-4">PyWeek</h1>
+                <p class="lead">A PyGame Developer Contest</p>  
               </div>
               
               <div class="my-md-auto  pl-2 pr-1">
@@ -63,12 +34,11 @@
                 <a class="d-inline-block d-md-none mt-2" href="https://www.guvi.io" title="Guvi Geek Networks">
                   <img src="images/guvi-icon.ico" title="Guvi Geek Networks" alt="GUVI Geek Networks" width="65px">
                 </a>
-                
               </div>
             </div>
-            
           </div>
       </header>
+
       <main>
         <div class="container p-0 mb-4 my-2">
             <div class="container bg-light p-3">
@@ -101,8 +71,8 @@
             </div>
         </div>
 
-        <div class="container bg-light p-3">
-          <p class="lead font-weight-bold">Prerequisite</p>
+        <div id="prerequisites" class="container bg-light p-3">
+          <p class="lead font-weight-bold">Prerequisites</p>
           <div class="container"> 
             <ul>
               <li class="my-3">
@@ -145,11 +115,11 @@
                           <li><p>Execute the following command</p></li>
                           <ul class="list-unstyled">
                             <li>
-                              <p class="m-0 font-weight-bold">Debian and Ubuntu based distribution</p>
-                              <div class="bg-light pl-3 p-1"><code>sudo dpkg -i filename.deb</code></div>
+                              <p class="font-weight-bold m-0 mb-2">Debian and Ubuntu based distribution</p>
+                              <div class="bg-light mb-3 pl-3 p-1"><code>sudo dpkg -i filename.deb</code></div>
                             </li>
                             <li>
-                              <p class="m-0 font-weight-bold">RHEL, Fedora and CentOS based distribution</p>
+                              <p class="font-weight-bold m-0 mb-2">RHEL, Fedora and CentOS based distribution</p>
                               <div class="bg-light pl-3 p-1">
                                 <code>sudo rpm -i filename.rpm</code>
                                 <p class="ml-3 m-0">or</p>

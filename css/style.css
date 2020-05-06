@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'somboriregular';
+  src: url('/fonts/sombori_demo-webfont.woff2') format('woff2'),
+       url('/fonts/sombori_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BerlinSansFB-Reg';
+  src: url('/fonts/BerlinSansFB-Reg.woff') format('woff2'),
+       url('/fonts/BerlinSansFB-Reg.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header h1{
+  font-family: somboriregular;
+}
+
+header p{
+  font-family: BerlinSansFB-Reg;
+  letter-spacing: 2px;
+}
+
+.nec-logo {
+  background: url(/images/logo_2.svg) no-repeat 50%;
+  background-size: cover;
+  width: 80px;
+  background-position: 10px;
+  height: 80px;
+}
+.guvi-logo{
+  background: url(/images/guvi-logo.png) no-repeat 50%;
+  background-size: contain;
+  width: 150px;
+  background-position: 10px;
+  height: 50px;
+}
+@media (min-width: 480px){
+  .header-background{
+    background: linear-gradient( to bottom, #017BFF,white,white, white, white, white, white, white, white, #017BFF);
+    border: 1px solid #017BFF;
+  }
+}
+
+@media (max-width: 479px) {
+  header{
+    border: 1px solid #017BFF;
+  }
+}
