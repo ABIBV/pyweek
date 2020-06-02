@@ -18,7 +18,7 @@ header h1{
   font-family: somboriregular;
 }
 
-header p{
+header p, #winners h1{
   font-family: BerlinSansFB-Reg;
   letter-spacing: 2px;
 }
@@ -49,3 +49,4 @@ header p{
     border: 1px solid #017BFF;
   }
 }
+
